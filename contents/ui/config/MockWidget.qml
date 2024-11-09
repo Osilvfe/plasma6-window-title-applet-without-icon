@@ -74,7 +74,7 @@ Item {
             PlasmaComponents.Label {
                 id: txt
                 text                    : active
-                ? cfg_txt.replace("%a","Kate").replace("%w","main.qml").replace("%q","Default")
+                ? cfg_txt.replace("%a","Kate").replace("%w","main.qml").replace("%q","Desktop")
                 : cfg_altTxt.replace("%q","ActivityName")
                 color                   : Kirigami.Theme.textColor
                 verticalAlignment       : Text.AlignVCenter

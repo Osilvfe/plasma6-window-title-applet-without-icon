@@ -15,13 +15,13 @@ GridLayout {
     //Calculated length for the label
     property real labelLen : {
         let neededInViewLen = cfg.firstSpace+cfg.midSpace+cfg.lastSpace+cfg.lastSpace
-        neededInViewLen += isVertical?iconItem.height:iconItem.width
+        //neededInViewLen += isVertical?iconItem.height:iconItem.width
         return cfg.fixedLength-neededInViewLen
     }
 
 
     CItem {length: cfg.firstSpace}
-    Item {
+/*     Item {
         id: iconItem
         Layout.minimumWidth   : isVertical  ? parent.width : height
         Layout.minimumHeight  : isVertical  ? width : parent.height
@@ -41,7 +41,7 @@ GridLayout {
             readonly property int thickMargin: cfg.fillThickness ? 0 : (parent.thickness - iconSize) / 2
             readonly property int iconSize   : cfg.fillThickness ? parent.thickness : Math.min(parent.thickness, cfg.customSize)
         }
-    }
+    } */
     CItem {length: cfg.midSpace}
     CItem{
         length : {

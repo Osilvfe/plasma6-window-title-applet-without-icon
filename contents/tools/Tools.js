@@ -35,12 +35,12 @@ function getText() {
     else if(existsWindowActive) return Tools.substitute()
     else return Tools.altSubstitute()
 }
-function getIcon() {
+/* function getIcon() {
     if((existsWindowActive&&!cfg.filterByMaximized)||(cfg.filterByMaximized&&isActiveWindowMaximized)) return activeTaskItem.icon
     else if(cfg.noIcon) return ""
     else if(cfg.activityIcon) return fullActivityInfo.icon
     else return cfg.customIcon
-}
+} */
 function getElide(val) {
     switch(val) {
         case 0: return Text.ElideNone
