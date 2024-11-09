@@ -1,5 +1,5 @@
-# Window Title Applet
-A Plasma 6 applet that builds on the work of [Psifidotos](https://github.com/psifidotos).
+# Window Title Applet without icon
+A Plasma 6 applet that builds on the work of [dhruv8sh](https://github.com/dhruv8sh).
 
 ## Substitutions
 - <b>%a</b> : Application Name
